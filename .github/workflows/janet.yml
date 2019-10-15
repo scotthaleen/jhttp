@@ -15,10 +15,12 @@ jobs:
         ref: refs/heads/master
     - name: make
       run: make
-      working-directory: ./janet
-    - name: make install
-      run: make install
-      working-directory: ./janet
+      working-directory: ../janet
+    - name: sudo make install
+      run: sudo make install
+      working-directory: ../janet
+    - name: libcurl4
+      run: sudo apt-get install libcurl4 libcurl4-openssl-dev -y
     - name: jpm build
       run: jpm build
     - name: jpm test
