@@ -14,13 +14,13 @@ jobs:
         path: ./janet
         ref: refs/heads/master
     - name: make
-      run: ls -la
+      run: ls -la ../
     - name: make
       run: make
-      working-directory: ./janet
+      working-directory: ../janet
     - name: make install
       run: make install
-      working-directory: ./janet
+      working-directory: ../janet
     - name: jpm build
       run: jpm build
     - name: jpm test
