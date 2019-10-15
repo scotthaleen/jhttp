@@ -1,5 +1,7 @@
 
-# jhttp
+# jhttp 
+[![Actions Status](https://github.com/scotthaleen/jhttp/workflows/janet%20ci/badge.svg)](https://github.com/scotthaleen/jhttp/actions)
+
 
 Sample [Janet](https://janet-lang.org) module that provides
 a simple [libcurl](https://curl.haxx.se/libcurl/c/example.html) wrapper
@@ -40,6 +42,6 @@ janet:2:> (http/get "https://postman-echo.com/get?foo1=bar1&foo2=bar2")
 ```
 
 ## Capabilites
-[x] GET
-[ ] POST
-[ ] DELETE
+[x] GET <br/>
+[ ] POST <br/>
+[ ] DELETE <br/>
