@@ -19,7 +19,7 @@ jobs:
       run: make
       working-directory: ../janet
     - name: make install
-      run: make install
+      run: sudo make install
       working-directory: ../janet
     - name: jpm build
       run: jpm build
